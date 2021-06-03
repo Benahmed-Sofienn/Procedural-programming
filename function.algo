@@ -1,0 +1,23 @@
+FUNCTION dot_product(arr1,arr2) : INTEGER
+VAR
+    i,scal : INTEGER;
+    
+BEGIN
+FOR i FROM 0 TO arr1.length-1 STEP 1  DO
+    scal=scal+arr1[i]*arr2[i]
+END_FOR
+    RETURN scal ;
+END
+ALGORITHM isOrthogonal
+VAR
+    tab1,tab2: ARRAY_OF INTEGER
+    
+BEGIN
+    p:=dot_product(arr1,arr2)
+    IF (p=0)) THEN
+        Write(the tow verctors are Orthogonal)
+    ELSE
+        Write(the tow verctors are not Orthogonal)
+    END_IF
+
+END
